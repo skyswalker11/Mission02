@@ -1,0 +1,56 @@
+﻿<!--Author: Spencer Walker
+    Description: This is a website which gives some information about the author of the project.
+        Additionally, the website provides a final grade calculator for BYU's IS413 course-->
+
+<!--This page displays the contents of the project to the user-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mission #2 Assignment</title>
+    <link rel="icon" type="image/jpg" href="img/HaleySpencerArches.jpg" />
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/stylesheet.css" rel="stylesheet" />
+
+</head>
+<!--Body provides information about Spencer Walker (me)-->
+<body>
+    <h1>Preferred name: Spencer</h1>
+
+    <label>I enjoy going cool places with my wife: </label>
+    <br />
+    <img style="width:350px;height:500px" id="picArches" src="img/HaleySpencerArches.jpg" />
+    <p>
+        I hope to gain skills from this class that will allow me
+        to function as and with developers in the workforce.  I also
+        hope to gain skills that will allow me to create my own projects
+        in the future.  I also hope to gain practice with problem-solving situations
+        related to business programming.
+    </p>
+    <p>Top Three Jobs I Will Pursue:</p>
+    <ul>
+        <li>1: Data Science--Natural Language Processing</li>
+        <li>2: Application Developer (Web or Mobile)</li>
+        <li>3: Project Management</li>
+    </ul>
+    <!--The following displays a form for the user to enter in grade percentages in each of the grade categories for IS413.  A button for submitting the form's grade percentages for 
+        final calculation is then given.  -->
+    <h2>Enter Grade Percentages: </h2>
+    <form>
+        <label>Assignments: </label>
+        <input id="intAssign" /><br />
+        <label>Group Project: </label>
+        <input id="intGroup" /><br />
+        <label>Quizzes: </label>
+        <input id="intQuiz" /><br />
+        <label>Exams: </label>
+        <input id="intExam" /><br />
+        <label>INTEX: </label>
+        <input id="intINT" /><br />
+        <input id="btnSend" type="button" value="Calculate Grade" />
+    </form>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/GradeCalc.js"></script>
+</body>
+</html>
