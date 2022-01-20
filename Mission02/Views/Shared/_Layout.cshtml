@@ -1,0 +1,41 @@
+﻿<!--Author: Spencer Walker
+    Description: This is a website which gives some information about the author of the project.
+        Additionally, the website provides a final grade calculator for BYU's IS413 course-->
+
+<!--This file contains the base template for all views in the program-->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/jpg" href="img/HaleySpencerArches.jpg" />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/stylesheet.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+
+
+    <!--The code below links to appropriate scripts and then renders the body for each view page-->
+
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--This footer was used for testing-->
+    <footer>This is footer</footer>
+
+
+
+</body>
+</html>

@@ -1,5 +1,4 @@
 ﻿// This file contains the javascript necessary to calculate the user's final grade given the user inputs.  It also displays a corresponding letter grade depending on the final numeric grade.
-
 $("#btnSend").click(function () {
     let fNumGrade;
     let asLetterGrade = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E"];
@@ -61,4 +60,3 @@ $("#btnSend").click(function () {
     
 })  
 
-//    
